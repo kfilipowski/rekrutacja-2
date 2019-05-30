@@ -1,0 +1,6 @@
+<?php
+
+return [
+    'upload_dir' => 'files',
+    'mime_types' => ['application/pdf', 'image/png']
+];
