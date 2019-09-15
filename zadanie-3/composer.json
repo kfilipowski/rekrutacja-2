@@ -1,0 +1,25 @@
+{
+    "name": "kfilipowski/zadanie-3",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Konrad Filipowski",
+            "email": "filipowski.konrad@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "App\\": "src/"
+      }
+    },
+    "require": {
+        "symfony/http-foundation": "^4.3",
+        "symfony/filesystem": "^4.3",
+        "symfony/finder": "^4.3",
+        "smarty/smarty": "^3.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3",
+		"phpunit/phpunit": "^8.3"
+    }
+}
