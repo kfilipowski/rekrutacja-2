@@ -2,4 +2,6 @@
 /.idea
 /config.php
 /cache/*
+!cache/.keep
 /public/files/*
+!public/files/.keep
