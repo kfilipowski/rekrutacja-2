@@ -13,9 +13,12 @@
         {include file="_step_age.tpl"}
         {include file="_step_color.tpl"}
         {include file="_step_swim.tpl"}
+        {include file="_step_final.tpl"}
         <br/>
         <input type="submit" name="reset" value="Reset">
-        <input type="submit" value="Next">
+        {if !$form->isFinalStep()}
+            <input type="submit" value="Next">
+        {/if}
     </form>
 </body>
 </html>
