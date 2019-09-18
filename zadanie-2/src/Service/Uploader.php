@@ -74,7 +74,10 @@ class Uploader implements UploaderInterface
             /** @var UploadedFile $item */
             $mime = $item->getMimeType();
             if (!in_array($mime, $this->mimeTypes, true)) {
-                throw new InvalidFileMimeTypeException();
+                throw new InvalidFileMimeTypeException(sprintf(
+                    'Invalid file mime type. Allowed only: %s.',
+                    implode(', ', $this->mimeTypes)
+                ));
             }
         }, $files);
     }
